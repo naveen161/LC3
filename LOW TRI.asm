@@ -1,4 +1,6 @@
-.ORIG x3000
+;code for lower triangle
+
+.ORIG x3000 ;starting address
 AND R0,R0,#0
 ADD R0,R0,#15
 ADD R0,R0,#15
@@ -26,7 +28,6 @@ LOOP
 	ADD R0,R0,#12
 	ADD R1,R1,#-1
  	BRp LOOP
-
 HALT
 CW .STRINGZ "\n"
 .END
